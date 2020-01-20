@@ -14,11 +14,15 @@ Pod::Spec.new do |s|
   # s.license    = { :type => "MIT", :file => "FILE_LICENSE" }
   s.authors      = { "Your Name" => "yourname@email.com" }
   s.platforms    = { :ios => "9.0" }
-  # s.source       = { :git => "https://github.com/github_account/react-native-counter-library.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/kyvinept/react-native-counter-library.git" }
 
-  s.source_files = "ios/**/*.{h,m,swift}"
-  s.requires_arc = true
+  s.source_files = 'ios/**/*.{h,m,swift}'
+  s.resource = "ios/**/*.{bundle,xib,plist}"
 
+  #  s.resource_bundles = {
+  #    'Resources' => ['ios/**/*.xib']
+  #  }
+  
   s.dependency "React"
   # ...
   # s.dependency "..."
